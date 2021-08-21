@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==3.2.6"
+django-filter = "==2.4.0"
+django-leaflet = "==0.28.1"
+djangorestframework-gis = "==0.17"
+markdown = "==3.3.4"
+psycopg2-binary = "==2.9.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
