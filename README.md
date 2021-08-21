@@ -2,7 +2,7 @@
 
 
 ## 概要
-- 以下参考（Docker導入および一部ソースコードをバージョンに適した内容に改変）<br>
+- 以下のGeoDjangoチュートリアルを実施<br>
 https://homata.gitbook.io/geodjango/
 
 
@@ -20,6 +20,12 @@ python3.8 manage.py createsuperuser
 ```
 
 ## 出典
+
+### 参考
+以下を参考（Docker導入および一部ソースコードをバージョンに適した内容に改変）<br>
+https://homata.gitbook.io/geodjango/
+
+### 使用データ
 国土数値情報 ダウンロードサービス - http://nlftp.mlit.go.jp/ksj/index.html の北海道のデータを使用
 
 - 国土交通省国土政策局「国土数値情報（行政区域データ）」 (N03-170101_01_GML)
