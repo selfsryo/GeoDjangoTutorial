@@ -23,9 +23,9 @@ RUN apt-get install -y curl \
 
 RUN pip install pipenv
 
-COPY Pipfile ./
+COPY Pipfile Pipfile.lock ./
 
-RUN pipenv install --system --skip-lock \
+RUN pipenv install --system \
     && pip uninstall -y pipenv virtualenv-clone virtualenv
 
 RUN apt-get update -y \
