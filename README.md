@@ -2,22 +2,26 @@
 
 
 ## 概要
-- 以下のGeoDjangoチュートリアルを実施<br>
+- 以下のGeoDjangoチュートリアルを実施、一部改変<br>
 https://homata.gitbook.io/geodjango/
 
 
 ## 環境構築
 
 ```sh
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 ## 管理者作成
+
 ```sh
 docker exec -it  geodjango_tutorial bash
 # コンテナ内で以下
 python3.8 manage.py createsuperuser
 ```
+
+## 仕様
+- 実行時に`entrypoint.sh`でスクリプトを実行することでgeojsonを取り込み
 
 ## 出典
 
