@@ -23,5 +23,15 @@ services:
     ports:
       - 5433:5432
 
+  nginx:
+    container_name: nginx_tutorial
+    build: ./nginx
+    volumes:
+      - ./geodjango/world/static:/usr/src/app/static
+    ports:
+      - 80:80
+    depends_on:
+      - django
+
 volumes:
   postgis_tutorial_data:
